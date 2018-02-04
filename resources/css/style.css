@@ -38,3 +38,21 @@ Header {
 header nav {
   padding-right: 40px;
 }
+
+/* Our Mission */
+
+#Mission {
+  background-image: url(../images/img-mission-background.jpg);
+  display: flex;
+  position: relative;
+  top: 69px;
+  margin: 0 auto;
+  height: 700px;
+  width: 1200px;
+  align-items: center;
+}
+
+#Mission .text-container {
+  background-color: black;
+  width: 100%;
+}
