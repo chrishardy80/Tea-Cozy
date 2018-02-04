@@ -1,7 +1,7 @@
 body {
   font-family: Helvetica, serif;
   font-size: 22px;
-  color: seashell;
+  color: Seashell;
   background-color: black;
   opacity: 0.9;
   text-align: center;
@@ -32,6 +32,9 @@ Header {
   background-color: black;
 }
 
+a {
+  color: seashell;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -67,8 +70,12 @@ header nav {
 /* Featured Tea */
 
 #Featured {
+  display: flex;
+  flex-direction: column;
   width: 1000px;
   margin: 0 auto;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
 .image-container img {
@@ -80,6 +87,7 @@ header nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .tea.row-one {
@@ -118,4 +126,24 @@ header nav {
 .text-container span {
   padding: 20px;
   font-size: 21px;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .info {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+}
+
+footer .copy {
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
 }
