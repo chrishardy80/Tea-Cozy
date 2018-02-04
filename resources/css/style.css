@@ -1,3 +1,5 @@
+/* Universal styling */
+
 body {
   font-family: Helvetica, serif;
   font-size: 22px;
@@ -8,14 +10,14 @@ body {
   margin: 0;
 }
 
-nav span {
-  display: inline-block;
-  padding: 20px 10px;
-}
-
 .content {
   position: relative;
   top: 69px;
+}
+
+h2, h3, h4 {
+  margin: 0;
+  padding: 10px;
 }
 
 /* Header */
@@ -30,6 +32,11 @@ Header {
   padding: 0 10px;
   border-bottom: 1px solid seashell;
   background-color: black;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
 }
 
 a {
@@ -70,17 +77,17 @@ header nav {
 /* Featured Tea */
 
 #Featured {
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 1000px;
-  margin: 0 auto;
-  justify-content: space-around;
-  align-content: space-around;
+  height: 700px;
+  margin: 0 100px;
+  padding-top: 70px;
 }
 
 .image-container img {
   height: 200px;
   width: 300px;
+  margin: 10px;
 }
 
 #Featured .image-container {
@@ -90,12 +97,15 @@ header nav {
 
 }
 
-.tea.row-one {
-  padding: 0 50px;
+.tea {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
 }
 
-.tea.row-two {
-  padding: 0 25px;
+.tea span {
+  padding: 5px;
+  font-weight: bold;
 }
 
 /* Locations */
@@ -119,27 +129,19 @@ header nav {
   display: flex;
   flex-direction: column;
   width: 300px;
-  margin: 20px;
+  margin: 5px 20px;
   background-color: black;
 }
 
-.text-container span {
-  padding: 20px;
-  font-size: 21px;
+.text-container p {
+  padding: 10px;
 }
 
 /*Footer*/
 
-footer {
-  display: flex;
-  flex-direction: column;
-}
-
 footer .info {
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 footer .copy {
